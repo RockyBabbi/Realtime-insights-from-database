@@ -1,0 +1,6 @@
+streamlit
+azureopenai
+langchain
+langchain-openai
+openai
+pypdf
