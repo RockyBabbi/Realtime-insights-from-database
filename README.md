@@ -28,9 +28,8 @@ MSSQLServer Database
 Installation
 Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/yourusername/nlp-mssql-langchain.git
+<img width="339" alt="image" src="https://github.com/user-attachments/assets/72b1f505-d174-40fa-879b-ea294e396ae2">
+
 Navigate to the project directory:
 
 bash
@@ -78,6 +77,7 @@ app.py: Main application script.
 requirements.txt: List of required dependencies.
 License
 This project is licensed under the MIT License. See the LICENSE file for more details.
+
 
 Acknowledgments
 Streamlit for building intuitive web applications.
