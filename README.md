@@ -41,44 +41,40 @@ Installation
 4. Set up an MSSQLServer database and note down the connection string (e.g., mssql+pymssql://username:password@localhost:1433/database).
 
 5. Obtain Azure OpenAI API access and note down your:
-
-  Deployment Name
-  API Version
-  API Key
-  API Endpoint
-  Running the Application
-  
-  
+     - Deployment Name
+     - API Version
+     - API Key
+     - API Endpoint
+     - Running the Application
 6. Run the Streamlit application:
 
 <img width="338" alt="image" src="https://github.com/user-attachments/assets/3f6e3b4f-e682-44db-894e-e7bb6fff1c05">
-
 
 In the sidebar, provide the necessary details:
 
 1. Chat Model: Choose GPT 3.5 Turbo.
 2. Azure LLM Deployment Name: Enter your deployment name from Azure OpenAI.
-      API Version: Select the API version, e.g., 2023-12-01-preview.
-      Azure LLM Endpoint: Enter your Azure OpenAI endpoint URL.
-      Azure LLM API Key: Provide your API key (this will be kept secure).
+     - API Version: Select the API version, e.g., 2023-12-01-preview.
+     - Azure LLM Endpoint: Enter your Azure OpenAI endpoint URL.
+     - Azure LLM API Key: Provide your API key (this will be kept secure).
 3. In the chat box, ask your natural language query related to the database, and the system will return the results.
 
 Example Usage
-1. The user inputs a question: "What are the top 5 employees with the highest salary?"
+1. The user inputs a question: "Which sales order has the hightest quantity?"
 The application:
 2. Processes the input with the selected Azure LLM.
-      Converts the question into an SQL query.
-      Executes the query on the MSSQLServer database.
-      Displays the result in the chat.
+    - Converts the question into an SQL query.
+    - Executes the query on the MSSQLServer database.
+    - Displays the result in the chat.
 
 Project Structure
-      app.py: Main application script.
-      requirements.txt: List of required dependencies.
+    - app.py: Main application script.
+    - requirements.txt: List of required dependencies.
 
 License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 Acknowledgments
-    Streamlit for building intuitive web applications.
-    LangChain for the robust NLP and agent tools.
-    Azure OpenAI for providing the language models.
+    - Streamlit for building intuitive web applications.
+    - LangChain for the robust NLP and agent tools.
+    - Azure OpenAI for providing the language models.
