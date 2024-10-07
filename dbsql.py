@@ -28,7 +28,7 @@ def main():
                 azure_endpoint=azure_endpoint
                 )
     
-        connection_string = f"mssql+pymssql://sa_user:omg@localhost:1433/testdb"
+        connection_string = f"mssql+pymssql://sa_user:<DB_password>@localhost:1433/testdb"
         db = SQLDatabase.from_uri(connection_string)
         db_engine=create_engine(connection_string)
         db=SQLDatabase(db_engine)
